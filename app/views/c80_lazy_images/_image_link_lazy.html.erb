@@ -1,0 +1,9 @@
+<%# партиал для отрисовки картинки, завёрнутой в ссылку, по которой можно перейти
+  # отрисовывается только с помощью метода хелпера render_image_link_lazy
+ %>
+<a class="lazy-image-wrapper <%= a_class %>" id='<%= aid %>' title="<%= alt_image %>" href="<%= a_href %>" target="<%= target %>" style="<%= a_css_style %>" rel="<%= a_rel %>">
+  <img data-original='<%= image_path(image) %>' alt="<%= alt_image %>" src="<%= image_path('1px_invisible.gif')%>">
+  <noscript>
+    <img src="<%=image_path(image)%>" alt="<%= alt_image %>">
+  </noscript>
+</a>

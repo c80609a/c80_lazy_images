@@ -1,0 +1,10 @@
+a.lazy-image-wrapper {
+  overflow: hidden !important;
+
+  > img {
+    color: transparent;
+    font-size: 0 !important;
+    border: none !important;
+    outline: none !important;
+  }
+}
